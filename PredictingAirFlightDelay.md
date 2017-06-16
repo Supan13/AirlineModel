@@ -12,7 +12,7 @@ year are quite large, I chose to restrict my focus to year 2016, which
 already contains close to 5 million records. The data for this year is
 available for different months. So I downloaded the data from January
 till December as twelve different excel files and then load and combine
-the files into a single large dataset in R enevironment to carry out EDA
+the files into a single large dataset in R environment to carry out EDA
 and predictive modeling.
 
 **Feature Selection**
@@ -46,32 +46,32 @@ exploratory analysis are as follows.
 
 9.  Origin
 
-10.OriginCityName
+10. OriginCityName
 
-11.DestinationAirportID
+11. DestinationAirportID
 
-12.Destination
+12. Destination
 
-13.DestinationCityName
+13. DestinationCityName
 
-14.CRSDepartureTime : Sceduled departure time
+14. CRSDepartureTime : Scheduled departure time
 
-15.DepTime : Actual departure time
+15. DepTime : Actual departure time
 
-16.CRSArrTime : Scheduled Arrival time
+16. CRSArrTime : Scheduled Arrival time
 
-17.ArrTime : Actual arrival time
+17. ArrTime : Actual arrival time
 
-18.ArrDelayMin : Delay in minutes
+18. ArrDelayMin : Delay in minutes
 
-19.ArrDel15 : Binary variable with 0 and 1 values. O as not arrival
+19. ArrDel15 : Binary variable with 0 and 1 values. O as not arrival
 delay and 1 as arrival delay(15 or &gt; 15 mins)
 
-20.CRSElapsedTime : Sceduled Elapsed Time
+20. CRSElapsedTime : Scheduled Elapsed Time
 
-21.ActElapsedTime : Actual Elapsed time
+21. ActElapsedTime : Actual Elapsed time
 
-22.Distance
+22. Distance
 
     #Loading all the files form Jan to Dec 2016
     file1 <- read.csv("AirDataJan.csv", sep=",", header=TRUE)
@@ -1478,7 +1478,7 @@ departure and arrival times.**
 ![](PredictingAirFlightDelay_files/figure-markdown_strict/unnamed-chunk-19-4.png)
 
     ArrDly_15min_Origin <- count(ArrDly_15min$ORIGIN)
-    
+     ArrDly_15min_Origin 
 
     ##       x  freq
     ## 1   ABE   346
@@ -1797,7 +1797,7 @@ departure and arrival times.**
 ![](PredictingAirFlightDelay_files/figure-markdown_strict/unnamed-chunk-19-5.png)
 
     ArrDly_15min_Dest <- count(ArrDly_15min$DEST)
-    
+    print(ArrDly_15min_Dest)
 
     ##       x  freq
     ## 1   ABE   417
