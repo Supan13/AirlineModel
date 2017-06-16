@@ -1478,7 +1478,7 @@ departure and arrival times.**
 ![](PredictingAirFlightDelay_files/figure-markdown_strict/unnamed-chunk-19-4.png)
 
     ArrDly_15min_Origin <- count(ArrDly_15min$ORIGIN)
-    ArrDly_15min_Origin
+    
 
     ##       x  freq
     ## 1   ABE   346
@@ -1797,7 +1797,7 @@ departure and arrival times.**
 ![](PredictingAirFlightDelay_files/figure-markdown_strict/unnamed-chunk-19-5.png)
 
     ArrDly_15min_Dest <- count(ArrDly_15min$DEST)
-    print(ArrDly_15min_Dest)
+    
 
     ##       x  freq
     ## 1   ABE   417
@@ -2182,7 +2182,7 @@ departure and arrival times.**
 
 **PREDICTIVE MODELS FOR ARRIVAL DELAYS**
 
-I have created several machine learning models to predict flight
+I have created two machine learning models to predict flight
 arriaval delays using There are ways to predict flight arrival delay, in
 this project instead of predicting the extent of delay, I opt to predict
 the outcome classes according to whether a flight is delayed (1) or not
