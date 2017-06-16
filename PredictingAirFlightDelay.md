@@ -2477,10 +2477,10 @@ least arrival delays. Carriers with the most arrival delays are American
 Airlines and Soutwest Airlines. These are the airlines that carry the
 most traffic and have the most number of flights.
 
-Both supervised learning algorithms K-NN and Decsion Tree predict the
+Both supervised learning algorithms K-NN and Decision Tree predict the
 arrival delays with accuracy of around 82%. The decision tree model was
-run on the entire dataset preceeded by equal dision into training and
-testsing sets(1:1). For k-nn 180000 data points were chosen and model
+run on the entire dataset preceeded by equal division into training and
+testing sets(1:1). For k-nn 180000 data points were chosen and model
 was trained and tested on the training and testing sets of (1:90000) and
 (90001:180000) data points respectively. The future work might extend to
 incorporate the departure delay feature and weather data into the models
